@@ -1,3 +1,4 @@
+/* Abigail Lazarus- 78758 */
 /*  ============= WEB BROWSER RESETS ============ */
 * { margin: 0; padding: 0; border: none }
 *, *::before, *::after { box-sizing: border-box }
@@ -71,6 +72,7 @@ section > *:last-child { margin-bottom: 0 !important }
         padding-right: 20%;
         padding-bottom: 4%;
         padding-left: 20%     
+
     }
 }
                         
@@ -123,4 +125,12 @@ p {
 }
 a { color: brown; }
 
+/* ============ PAGE 1 CONTENT CONTAINER ============ */
+
+.page-container {
+  max-width: 900px;      
+  margin: 0 auto;          
+  padding: 2rem;           
+  line-height: 1.6;       
+}
 

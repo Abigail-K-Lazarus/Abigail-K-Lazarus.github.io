@@ -1,3 +1,4 @@
+/* Abigail Lazarus- 78758 */
 /*  ============= WEB BROWSER RESETS ============ */
 * { margin: 0; padding: 0; border: none }
 *, *::before, *::after { box-sizing: border-box }
@@ -12,6 +13,24 @@ img { width: 100%; height: auto }
 /* ============ CUSTOM PROPERTIES ============  */
 
 :root {
+
+    /* Alternatives to default sans-serif font */
+    --font-sans: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+
+     /* Alternatives to default serif font */
+    --font-serif: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+
+     /* Alternatives to default monospace font */
+    --font-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+    /* Fluid font SIZE scale */
+    --fs-sm: clamp(0.8rem, 0.17vi + 0.76rem, 0.89rem);
+    --fs-base: clamp(1rem, 0.34vi + 0.91rem, 1.19rem);
+    --fs-md: clamp(1.25rem, 0.61vi + 1.1rem, 1.58rem);
+    --fs-lg: clamp(1.56rem, 1vi + 1.31rem, 2.11rem);
+    --fs-xl: clamp(1.95rem, 1.56vi + 1.56rem, 2.81rem);
+    --fs-xxl: clamp(2.44rem, 2.38vi + 1.85rem, 3.75rem);
+    --fs-xxxl: clamp(3.05rem, 3.54vi + 2.17rem, 5rem);
 
     
     /* Color variables */
@@ -227,24 +246,6 @@ img { width: 100%; height: auto }
     --trend-700: #2c4763;
     --trend-800: #1f364d;
     --trend-900: #0e2439;
-
-    /* Alternatives to default sans-serif font */
-    --font-sans: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
-
-     /* Alternatives to default serif font */
-    --font-serif: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
-
-     /* Alternatives to default monospace font */
-    --font-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-
-    /* Fluid font SIZE scale */
-    --fs-sm: clamp(0.8rem, 0.17vi + 0.76rem, 0.89rem);
-    --fs-base: clamp(1rem, 0.34vi + 0.91rem, 1.19rem);
-    --fs-md: clamp(1.25rem, 0.61vi + 1.1rem, 1.58rem);
-    --fs-lg: clamp(1.56rem, 1vi + 1.31rem, 2.11rem);
-    --fs-xl: clamp(1.95rem, 1.56vi + 1.56rem, 2.81rem);
-    --fs-xxl: clamp(2.44rem, 2.38vi + 1.85rem, 3.75rem);
-    --fs-xxxl: clamp(3.05rem, 3.54vi + 2.17rem, 5rem);
 }
 
 /*  ============== LAYOUT FOR CONTENT CONTAINERS ================= */
@@ -304,7 +305,6 @@ section > * { max-width: 1600px }
 section > * { max-width: 1600px; margin-left: auto; margin-right: auto }
 
 /* ============= TYPOGRAPHY ============ */
-
 body { 
     background-color: var(--blue-200);
     font-family: var(--font-serif);
@@ -330,4 +330,16 @@ p {
 	margin-bottom: 12px;
 }
 
+.section-1 { 
+    background-color: lightgreen;
+    
+}
 
+.section-2 { 
+     background-color:lemonchiffon
+    
+}
+.section-3 { 
+     background-color:lightblue
+    
+}

@@ -31,6 +31,7 @@ img { width: 100%; height: auto }
     --fs-xl: clamp(1.95rem, 1.56vi + 1.56rem, 2.81rem);
     --fs-xxl: clamp(2.44rem, 2.38vi + 1.85rem, 3.75rem);
     --fs-xxxl: clamp(3.05rem, 3.54vi + 2.17rem, 5rem);
+
 }
 
 /*  ============== LAYOUT FOR CONTENT CONTAINERS ================= */
@@ -41,11 +42,11 @@ header, section, footer { margin-left: auto; margin-right: auto; overflow: hidde
 section > *:last-child { margin-bottom: 0 !important }
 
 /*  ====================== HEADER ======================== */
-         
+
 /* Padding around content: laptops / desktops  */
 @media (min-width: 768px) {
     header { 
-        padding-top: 1%; 
+        padding-top: 3%; 
         padding-right: 20%;
         padding-bottom: 0%;
         padding-left: 20%
@@ -62,10 +63,9 @@ section > *:last-child { margin-bottom: 0 !important }
     }
 }
 
-
 /*  ====================== SECTIONS ======================== */
 
-/* Padding around content: laptops / desktops  */
+/* Padding around content: laptops / desktops */
 @media (min-width: 768px) {
     section { 
         padding-top: 4%;
@@ -81,8 +81,7 @@ section > *:last-child { margin-bottom: 0 !important }
         padding-left: 5%;
         padding-right: 5%;
         padding-bottom: 5%;
-        padding-left: 5% 
-    }
+        padding-left: 5% }
 }
 
 /* Maximum width of any section */
@@ -94,37 +93,47 @@ section > * { max-width: 1600px }
 section > * { max-width: 1600px; margin-left: auto; margin-right: auto }
 
 /* ============= TYPOGRAPHY ============ */
-body { background-color: #7d3c98; }
+
+body {
+     
+    font-family: var(--font-sans);
+    text-align: center;
+    background-color: lightgreen;
+
+    }
+
 h1 {
+
     font-size: var(--fs-xxxl);
-    margin-top: 32px;
     line-height: 1.2;
-    color: white;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: -3px;
+
 }
 
 h2 {
     font-size: var(--fs-xl);
     line-height: 1.2;
-    margin-top: 48px; 
-    margin-bottom: 6px;
-    color: white;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-weight: normal;
+    letter-spacing: 2px;
+
 }
+
+h3 {
+    font-size: var(--fs-lg);
+    margin-top: 48px;
+    margin-bottom: 24px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
 
 p {
-	font-size: var(--fs-base);
+    font-size: var(--fs-md);
     line-height: 1.7;
-	margin-bottom: 12px;
+    margin-bottom: 12px;
 }
-a{color: white;}
-.page-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
-  line-height: 1.6;
-  background-color: #d8b1f6;
-}
-
-h1, h2 {
-  color: purple;
-  font-family: var(--font-serif, Georgia, serif);
-}
+a { color: darkgreen; }
